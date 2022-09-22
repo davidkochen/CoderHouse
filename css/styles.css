@@ -1,0 +1,200 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos de generales de body */
+
+body{
+    background-color: #ECEEF3;
+    background-image: url("../img/fondo.jpg") ;
+    background-repeat: no-repeat;
+    background-size:contain;
+    font-family: 'Shippori Antique B1', sans-serif ; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;    
+}
+
+/* estilos de header */
+
+header{
+    
+    background-color:#FA6900;
+}
+
+header h1{
+    display: none;
+    text-align: center;
+    color: #ECEEF3;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+header div a{
+    display: block;
+}
+
+header nav{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #ECEEF3;
+    color: #1C140D;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #1C140D;
+    text-decoration: none;  
+}
+
+header nav ul li{
+
+    list-style: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #ECEEF3;   
+    display: inline-block;
+    margin: 1rem;  
+} 
+
+/* estilos de menu */
+
+header nav ul li a{
+    text-decoration: none;
+    color: #1C140D;
+    padding: 0 0.7rem;
+}
+
+header nav ul li a:hover {
+    
+    background-color: #FA6900;
+    color: #ECEEF3;
+    border-radius: 0.8rem;
+}
+
+/* estilos de main*/
+
+main div{
+
+    display: flex;
+    text-align: center;
+    margin: 0%;
+    align-items: center; 
+    align-content: center;
+   
+}
+main .card{
+    
+    background-color: none;
+}
+
+
+main p{
+
+    text-align: center;
+    color: #ECEEF3;
+    background-color: #FA6900; 
+    padding: 0.8rem;
+    letter-spacing: 0.02rem; 
+}
+
+
+
+/* estilos de div */
+
+div{
+    text-align: center;
+    margin: 1.2rem;  
+     
+}
+
+/* estilos de section */
+
+section{
+    height: 10rem;
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr) ;
+    justify-items: center;
+    align-items: center ;
+    text-align: center;
+    padding: 1.2rem; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+section h3{ 
+    display: none; 
+    font-size: 1.3rem;  
+    letter-spacing: 0.01rem;
+    
+}
+
+/* estilos de h2 */
+
+h2{
+    text-align: center;
+    margin: 1.2rem;
+  
+}
+
+/* estilos de footer */
+
+footer p{
+    text-align: center;
+    color: #ECEEF3;
+    background-color: #FA6900; 
+    padding: 0.8rem;
+    letter-spacing: 0.02rem;
+}
+
+footer{
+    margin-top: auto;
+    
+}
+
+/* estilos del parrafo */
+
+li{
+    list-style: none;
+}
+
+/* media queries */
+
+@media screen and (min-width:600px){
+
+/* estilos de header */
+
+header div a{
+    display: none;
+}
+
+header h1{
+    display: block;
+    
+}
+
+/* estilos de main */
+
+main .card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1.2rem;
+    padding: 2rem;
+    background-color: none;
+}
+
+/* nuevos estilos de section */
+
+section h3{
+    
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}   
+}
